@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container {
+    max-width: 375px;
+}
+
+.logo {
+    margin: 100px 0 30px;
+}
+
+h1 {
+    color: hsl(0, 0%, 59%);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+.first {
+    color: hsl(209, 33%, 12%);
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.form {
+    margin-bottom: 70px;
+}
+
+input, button {
+    border-radius: 40px;
+    padding: 10px;
+    width: 100%;
+}
+
+input {
+    border: 2px hsl(223, 100%, 88%) solid;
+    padding-left: 35px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+::placeholder {
+    color: hsl(223, 100%, 88%);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.error-massage {
+    color: hsl(354, 100%, 66%);
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    border: 1px hsl(223, 87%, 63%) solid;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+    outline: none;
+}
+
+button:hover {
+    background-color: hsla(223, 87%, 63%, 0.8);
+}
+
+
+footer {
+    margin-top: 100px;
+}
+
+footer p {
+    color: hsl(0, 0%, 59%);
+    font-size: 11px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.fab {
+    color: hsl(223, 87%, 63%);
+    padding: 10px;
+}
+
+.fab:hover {
+    color: hsla(223, 87%, 63%, 0.8);
+}
