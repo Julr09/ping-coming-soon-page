@@ -72,10 +72,14 @@ input {
 
 .error-massage {
     color: hsl(354, 100%, 66%);
-    display: block;
+    display: none;
     font-size: 12px;
     font-weight: 300;
     margin-bottom: 30px;
+}
+
+.error  {
+    display: block;
 }
 
 button {
