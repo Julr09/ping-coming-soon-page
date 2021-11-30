@@ -61,7 +61,7 @@ input {
     border: 2px hsl(223, 100%, 88%) solid;
     padding-left: 35px;
     outline: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 ::placeholder {
@@ -72,10 +72,10 @@ input {
 
 .error-massage {
     color: hsl(354, 100%, 66%);
-    display: none;
+    display: block;
     font-size: 12px;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 button {
@@ -84,7 +84,6 @@ button {
     border: 1px hsl(223, 87%, 63%) solid;
     color: white;
     font-weight: 600;
-    margin-top: 5px;
     outline: none;
 }
 
@@ -100,15 +99,83 @@ footer {
 footer p {
     color: hsl(0, 0%, 59%);
     font-size: 11px;
-    margin-top: 20px;
+    margin: 20px 0 30px;
     font-weight: 300;
 }
 
 .fab {
     color: hsl(223, 87%, 63%);
     padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
 
 .fab:hover {
     color: hsla(223, 87%, 63%, 0.8);
+}
+
+@media (min-width: 600px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .logo {
+        margin: 50px 0 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .first {
+        font-size: 16px;
+    }
+
+    form {
+        display: flex;
+    }
+
+    button, input {
+        margin: 0;
+    }
+
+    label {
+        flex-grow: 2;
+    }
+
+    button {
+        margin-left: 15px;
+        width: 30%;
+        max-height: 43px;
+    }
+
+    .error-massage {
+        margin: 10px 0 0;
+        padding-left: 35px;
+        text-align: left;
+    }
+
+    footer {
+        margin-top: 150px;
+    }
+}
+
+@media (min-height: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-top: 100px;
+    }
+
+    .form {
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    footer {
+        margin-top: 250px;
+    }
 }
